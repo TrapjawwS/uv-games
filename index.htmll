@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <script src="uv/uv.bundle.js"></script>
+    <script src="uv/uv.config.js"></script>
+    <script src="index.js"></script>
+  </head>
+  <script>
+  const iframe = document.querySelector('iframe');
+const iframeWindow = iframe.contentWindow;
+const script = iframeWindow.document.createElement('script');
+script.src = 'uv/uv.bundle.js';
+iframeWindow.document.head.appendChild(script);
+    const iframe = document.querySelector('iframe');
+const iframeWindow = iframe.contentWindow;
+const script = iframeWindow.document.createElement('script2');
+script.src = 'uv/uv.config.js';
+iframeWindow.document.head.appendChild(script2);
+    const iframe = document.querySelector('iframe');
+const iframeWindow = iframe.contentWindow;
+const script = iframeWindow.document.createElement('script3');
+script.src = 'index.js';
+iframeWindow.document.head.appendChild(script3);
+  </script>
+ <iframe src="https://agar.io/" id="script script2 script3" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;">
+</iframe>
+  </body>
+  </html>
